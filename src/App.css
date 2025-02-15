@@ -1,0 +1,46 @@
+body, .navbar {
+  background-color: #1a1a1a; /* Slightly lighter than black */
+  color: white;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+.custom-nav-link {
+  position: relative;
+  color: inherit; /* Inherits text color from Navbar.jsx */
+  transition: color 0.3s ease; 
+}
+
+.custom-nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #A855F7; /* Purple underline */
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  color: #A855F7; /* Text color changes on hover */
+}
+
+.custom-nav-link:hover::after {
+  width: 100%; /* Underline expands fully on hover */
+}
+
+.hero {
+  background-color: #222; /* Just a bit lighter for contrast */
+}
+
+/* Hover Zoom Effect for Services & Blog Cards */
+.service-card, .blog-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover, .blog-card:hover {
+  transform: scale(1.05);
+}
