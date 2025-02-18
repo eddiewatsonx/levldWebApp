@@ -4,14 +4,14 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "animate.css";
 
 export default function Navbar({ darkMode, setDarkMode }) {
-  const [scrolling, setScrolling] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolling(true);
+        setScrolled(true);
       } else {
-        setScrolling(false);
+        setScrolled(false);
       }
     };
 
@@ -21,7 +21,16 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top transition ${scrolling ? "bg-dark bg-opacity-75 shadow" : "bg-transparent"}`}
+      className={`navbar navbar-expand-lg fixed-top transition ${scrolled ? "bg-dark bg-opacity-75 shadow-lg rounded-pill p-2 mx-4" : "bg-transparent"}`}
+      style={{
+        top: scrolled ? "20px" : "0",
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: scrolled ? "80%" : "100%",
+        transition: "all 0.5s ease",
+        backdropFilter: "blur(10px)",
+        border: scrolled ? "1px solid rgba(255, 255, 255, 0.2)" : "none",
+    }}
     >
       <div className="container">
         {/* Logo */}
@@ -30,8 +39,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             src={darkMode ? "/Levld-Up-Logo-White.png" : "/Levld-Up-Logo-Dark.png"} 
             alt="Levld Up Logo" 
             className="logo"
-            style={{ height: "60px" }}
-            href="#hero"
+            style={{ height: scrolled ? "45px" : "60px", transition: "height 0.5s ease" }}
           />
         </a>
 

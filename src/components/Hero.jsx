@@ -1,27 +1,20 @@
+import FloatingShapes from './FloatingShapes';
+
 export default function Hero() {
   return (
     <section
       id="hero"
       className="hero d-flex align-items-center justify-content-center text-center text-white position-relative"
       style={{
-        backgroundImage: "url('/hero-rubiks-image.png')",
-        backgroundAttachment: "fixed", // Parallax effect
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        background: "linear-gradient(135deg, #1E1E1E, #2D2D2D)",
         height: "100vh",
         width: "100vw",
-        overflow: "hidden", // Prevents any potential scroll issues
+        overflow: "hidden",
+        position: "relative",
       }}
     >
-      {/* Dark Overlay */}
-      <div
-        className="position-absolute top-0 start-0 w-100 h-100"
-        style={{
-          backgroundColor: "rgba(0, 0, 0, 0.6)", // Adjust the 0.6 for more/less darkness
-          zIndex: 1,
-        }}
-      ></div>
+      {/* Floating 3D Shapes */}
+      <FloatingShapes />
 
       {/* Hero Content */}
       <div className="container position-relative" style={{ zIndex: 2 }}>

@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
 import Contact from "./components/Contact";
+import ProductLogosCarousel from "./components/ProductLogosCarousel"
 import { Footer } from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -15,6 +16,7 @@ import './App.css';
 // Import AOS library
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Carousel } from "bootstrap/dist/js/bootstrap.bundle.min";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
