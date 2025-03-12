@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Challenges from "./components/Challenges";
+import LevldServices from "./components/LevldServices";
 import Services from "./components/Services";
 import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
 import Contact from "./components/Contact";
-import ProductLogosCarousel from "./components/ProductLogosCarousel"
+import Pricing from "./components/Pricing"
 import { Footer } from "./components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -34,13 +35,14 @@ export default function App() {
       <Router>
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Hero />
-        <Challenges/>
-        <Services />
+        <Challenges />
+        <LevldServices />
+        <Pricing />
         <Blog />
         <Contact />
         <Footer />
         <Routes>
-          <Route path="/" element={<h1>Home Page</h1>} />
+          {/* <Route path="/" element={<h1></h1>} /> */}
           <Route path="/services/startup" element={<h1>Startup Essentials</h1>} />
           <Route path="/services/growth" element={<h1>Growth Pro</h1>} />
           <Route path="/services/enterprise" element={<h1>Enterprise Pro</h1>} />

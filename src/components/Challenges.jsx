@@ -1,4 +1,4 @@
-export default function Challenges() {
+export default function  () {
     return (
       <section id="solutions" className="container-fluid py-5 bg-dark text-white">
         <div className="container text-center" data-aos="fade-up" data-aos-delay="100">
@@ -54,7 +54,7 @@ export default function Challenges() {
   
           <p className="mt-4 fs-5">
             You don’t have to struggle with these challenges. <br />
-            <strong>Levld Up simplifies web development, IT, and digital growth strategies</strong> so you can focus on what matters—<strong>growing your business.</strong>
+            <strong>Levld MSP simplifies web development, IT, and digital growth strategies</strong> so you can focus on what matters—<strong>growing your business.</strong>
           </p>
   
           <a href="#services" className="btn btn-lg mt-3" style={{ backgroundColor: "#A855F7", color: "white" }}>
@@ -62,5 +62,6 @@ export default function Challenges() {
           </a>
         </div>
       </section>
+      
     );
   }

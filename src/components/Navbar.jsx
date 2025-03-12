@@ -55,7 +55,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               <a className="nav-link custom-nav-link" href="#solutions">Solutions</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link custom-nav-link" href="#services">Services</a>
+              <a className="nav-link custom-nav-link" href="#pricing">Services</a>
             </li>
             <li className="nav-item">
               <a className="nav-link custom-nav-link" href="#blog">Blog</a>

@@ -4,7 +4,6 @@ body, .navbar {
 }
 
 
-
 .custom-nav-link {
   position: relative;
   color: inherit; /* Inherits text color from Navbar.jsx */
