@@ -8,8 +8,8 @@ export default function Pricing() {
   };
 
   const pricingData = {
-    monthly: { startup: 400, growth: 1200, enterprise: 8000 },
-    quarterly: { startup: 360, growth: 1080, enterprise: 7200 },
+    monthly: { startup: 400, growth: 900, enterprise:1500  },
+    quarterly: { startup: 340, growth: 765, enterprise: 1275 },
   };
 
   return (
@@ -25,7 +25,7 @@ export default function Pricing() {
         {/* Toggle Button */}
         <div className="toggle-container mb-4" style={{ maxWidth: "350px", margin: "0 auto" }}>
           <button className={`toggle-btn ${billingCycle === "monthly" ? "active" : ""}`} onClick={toggleBillingCycle}>Monthly</button>
-          <button className={`toggle-btn ${billingCycle === "quarterly" ? "active" : ""}`} onClick={toggleBillingCycle}>Quarterly (Save 10%)</button>
+          <button className={`toggle-btn ${billingCycle === "quarterly" ? "active" : ""}`} onClick={toggleBillingCycle}>Quarterly (Save 15%)</button>
         </div>
 
         {/* Pricing Cards */}

@@ -4,11 +4,11 @@ const cors = require("cors");
 const pool = require('./db');
 
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 8080;  // Change 5001 to 8080 or a flexible port
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Explicitly allow your frontend
+  origin: 'http://localhost:5173', // Change this to your AWS domain if needed
   methods: ['POST', 'GET', 'OPTIONS'],
   credentials: true
 }));
