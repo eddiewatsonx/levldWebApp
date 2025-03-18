@@ -16,14 +16,14 @@ app.use(cors({
 app.use(express.json());
 
 // Serve static files from React frontend
-app.use(express.static(path.join(__dirname, "dist")));
+app.use(express.static(path.join(__dirname, "..", "backend", "dist")));
 
 // API Routes
 app.use("/api/contact", require("./routes/contact"));
 
 // Catch-all route to serve React frontend
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "backend", "dist", "index.html"));
 });
 
 // Start the server
