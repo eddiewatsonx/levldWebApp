@@ -7,9 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-dist
-dist-ssr
+
+# Ignore all dist/ folders
+dist/
+dist-ssr/
+
+# But allow the backend/dist/ folder for deployment
+!backend/dist/
+
+# Local environment files
 *.local
 
 # Editor directories and files
@@ -25,6 +33,7 @@ dist-ssr
 
 # Environment variables
 .env
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
