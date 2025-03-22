@@ -11,8 +11,7 @@ lerna-debug.log*
 node_modules
 
 # Ignore all dist/ folders
-dist/
-dist-ssr/
+# dist-ssr/
 
 # But allow the backend/dist/ folder for deployment
 !backend/dist/

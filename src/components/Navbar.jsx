@@ -36,7 +36,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         {/* Logo */}
         <a className="navbar-brand ms-3" href="#hero">
           <img 
-            src={darkMode ? "/levld-logos-v2-white-2025.png" : "/Levld-Up-Logo-Dark.png"} 
+            src={darkMode ? "/levld-logo.png" : "/Levld-Up-Logo-Dark.png"} 
             alt="Levld Up Logo" 
             className="logo"
             style={{ height: scrolled ? "75px" : "125px", transition: "height 0.5s ease" }}
