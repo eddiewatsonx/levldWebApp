@@ -20,7 +20,8 @@ export default function Hero() {
       <div className="container position-relative" style={{ zIndex: 2 }}>
         <h1 className="fw-bold display-4">Elevate Your Digital Presence</h1>
         <p className="lead">
-        Providing cutting-edge Web Development, robust IT Solutions, and tailored Managed Services to elevate your business.
+        Providing cutting-edge Web Development, robust IT Solutions, and tailored Managed Services to elevate your business. 
+        Let us bring the balance you need.
         </p>
         <a href="#services" className="btn btn-lg mt-3" style={{ backgroundColor: "#A855F7", color: "white", border: "none" }}>
           Get Started

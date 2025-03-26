@@ -10,12 +10,8 @@ lerna-debug.log*
 # Dependencies
 node_modules
 
-# Ignore all dist/ folders
-backend/dist/
+# Ignore server-side SSR build only
 dist-ssr/
-
-# But allow the backend/dist/ folder for deployment
-!backend/dist/
 
 # Local environment files
 *.local
